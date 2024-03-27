@@ -1,0 +1,20 @@
+<div class="main">
+    <div class="left-section">
+        <div *ngIf="!(books$|async)?.isLoading" class="book-list">
+            <app-book-list [bookList]="((books$|async)?.bookList)!"></app-book-list>
+            <div *ngIf="!(books$|async)?.isLoading"> Total Books : {{(books$|async)?.totalBooks}} $</div>
+            <div *ngIf="!(books$|async)?.isLoading"> Total Amount : {{(books$|async)?.totalAmount}}</div>
+        </div>
+        <ng-container class="loader" *ngIf="(books$|async)?.isLoading" #loader>
+            Loading....
+        </ng-container>
+    </div>
+    <div class="right-section">
+        <app-update-book>
+        </app-update-book>
+    </div>
+</div>
+
+<ng-container *ngIf="(books$|async)?.error" #error>
+    Something went wrong if the issue still persists contact the administers of the page.
+</ng-container>

@@ -1,0 +1,27 @@
+<form #updateForm="ngForm">
+
+    <label for="title">Title </label>
+    <input required ngModel type="text" #title="ngModel" name="title" id="title"><br>
+    <span *ngIf="title.invalid && title.touched">Please enter the Book title</span><br>
+
+    <label for="author">Author </label>
+    <input required ngModel type="text" #author="ngModel" name="author" id="author"><br>
+    <span *ngIf="author.invalid && author.touched">Please enter author name</span><br>
+
+    <label for="description">Description </label>
+    <input required ngModel type="text" #description="ngModel" name="description" id="Description"><br>
+    <span *ngIf="description.invalid && description.touched">Please enter the Description</span><br>
+
+    <label for="price">Price </label>
+    <input required ngModel type="text" #price="ngModel" name="price" id="price"><br>
+    <span *ngIf="price.invalid && price.touched">Please enter the Product price</span><br>
+
+    <label for="quantity">Quantity </label>
+    <input required ngModel type="text" #quantity="ngModel" name="quantity" id="quantity"><br>
+    <span *ngIf="quantity.invalid && quantity.touched">Please enter the quantity</span><br>
+
+</form>
+<div class="button-div">
+    <button mat-raised-button [disabled]="updateForm.invalid" (click)="handleSubmit(updateForm.value)">Add Book</button>
+    <button mat-dialog-close mat-raised-button>Back</button>
+</div>

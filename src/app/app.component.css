@@ -1,0 +1,32 @@
+.nav-bar {
+  background-color: orange;
+  height: 10%;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  vertical-align: center;
+  text-align: center;
+}
+.link {
+  display: flex;
+  justify-content: right;
+  vertical-align: center;
+  width: 50%;
+}
+a {
+  background-color: orange;
+  color: black;
+  display: flex;
+  vertical-align: center;
+  text-decoration: none;
+  margin: auto 20px;
+}
+h1 {
+  margin: auto 0;
+  padding: 1%;
+}
+p {
+  font-size: 1rem;
+  margin: auto 10px;
+  font-size: 1rem;
+}

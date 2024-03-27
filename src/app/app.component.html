@@ -1,0 +1,16 @@
+<div>
+    <div class="nav-bar">
+        <h1>Ngrx Demo</h1>
+        <div class="link">
+            <a routerLink="/book">
+                <mat-icon>book</mat-icon>
+                <div matBadge={{(books$|async)?.length}} matBadgeOverlap="false" class="demo-section">Books</div>
+            </a>
+            <a routerLink="/counter">
+                <mat-icon>count</mat-icon>
+                <p> Counter</p>
+            </a>
+        </div>
+    </div>
+    <router-outlet></router-outlet>
+</div>

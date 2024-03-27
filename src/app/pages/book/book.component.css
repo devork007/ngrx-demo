@@ -1,0 +1,17 @@
+.main {
+  display: flex;
+}
+.left-section {
+  width: 60%;
+  padding-left: 3%;
+  padding-top: 3%;
+}
+.right-section {
+  width: 40%;
+  padding: 5%;
+}
+.book-list {
+}
+.loader {
+  margin-top: 50px;
+}

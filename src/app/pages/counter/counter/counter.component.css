@@ -1,0 +1,31 @@
+.title {
+  font-size: 2rem;
+}
+.title,
+.counter,
+.button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem 0;
+}
+.counter {
+  font-size: 1.5rem;
+}
+.main {
+  display: flex;
+  justify-content: center;
+  vertical-align: center;
+  height: 100vh;
+}
+.center {
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 50%;
+}
+app-counter-button {
+  /* background-color: orange; */
+  margin: 0 2rem;
+}
